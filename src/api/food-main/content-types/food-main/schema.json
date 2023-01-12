@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_mains",
+  "info": {
+    "singularName": "food-main",
+    "pluralName": "food-mains",
+    "displayName": "FoodMain",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date"
+    },
+    "food_catagory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::food-catagory.food-catagory",
+      "inversedBy": "food_mains"
+    },
+    "food_inventories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::food-inventory.food-inventory"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emg_bookings",
+  "info": {
+    "singularName": "emg-booking",
+    "pluralName": "emg-bookings",
+    "displayName": "EmgBooking"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TimeSlot": {
+      "type": "datetime"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "emg_bookings"
+    }
+  }
+}
