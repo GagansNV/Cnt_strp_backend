@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peopler_counts",
+  "info": {
+    "singularName": "peopler-count",
+    "pluralName": "peopler-counts",
+    "displayName": "PeoplerCount"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rcounting": {
+      "type": "biginteger"
+    }
+  }
+}

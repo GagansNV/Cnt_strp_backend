@@ -18,16 +18,14 @@
     "Price": {
       "type": "integer"
     },
-    "Image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "food_mains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::food-main.food-main",
+      "mappedBy": "food_inventory"
+    },
+    "ImgUrl": {
+      "type": "string"
     }
   }
 }

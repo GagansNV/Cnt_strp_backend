@@ -60,8 +60,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.role",
-      "inversedBy": "users",
-      "configurable": false
+      "inversedBy": "users"
     },
     "organization": {
       "type": "relation",
@@ -75,7 +74,15 @@
       "mappedBy": "users_permissions_user"
     },
     "EmpId": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "mappedBy": "users_permissions_user"
+    },
+    "ap_roles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ap-role.ap-role",
+      "mappedBy": "user"
     }
   }
 }

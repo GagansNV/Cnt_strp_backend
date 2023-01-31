@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "people_counts",
+  "info": {
+    "singularName": "people-count",
+    "pluralName": "people-counts",
+    "displayName": "PeopleCount"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "realCount": {
+      "type": "string"
+    }
+  }
+}

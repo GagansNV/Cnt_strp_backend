@@ -15,16 +15,17 @@
     "Date": {
       "type": "date"
     },
+    "food_inventory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::food-inventory.food-inventory",
+      "inversedBy": "food_mains"
+    },
     "food_catagory": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::food-catagory.food-catagory",
       "inversedBy": "food_mains"
-    },
-    "food_inventories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::food-inventory.food-inventory"
     }
   }
 }
