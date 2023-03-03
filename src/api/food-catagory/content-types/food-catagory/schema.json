@@ -4,8 +4,7 @@
   "info": {
     "singularName": "food-catagory",
     "pluralName": "food-catagories",
-    "displayName": "FoodCatagory",
-    "description": ""
+    "displayName": "FoodCatagory"
   },
   "options": {
     "draftAndPublish": true

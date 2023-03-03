@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ap-role controller
+ * feedback controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::ap-role.ap-role');
+module.exports = createCoreController('api::feedback.feedback');

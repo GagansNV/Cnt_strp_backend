@@ -1,5 +1,5 @@
 {
-  "/ap-roles": {
+  "/feedbacks": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApRoleListResponse"
+                "$ref": "#/components/schemas/FeedbackListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Ap-role"
+        "Feedback"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/ap-roles"
+      "operationId": "get/feedbacks"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApRoleResponse"
+                "$ref": "#/components/schemas/FeedbackResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Ap-role"
+        "Feedback"
       ],
       "parameters": [],
-      "operationId": "post/ap-roles",
+      "operationId": "post/feedbacks",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ApRoleRequest"
+              "$ref": "#/components/schemas/FeedbackRequest"
             }
           }
         }
       }
     }
   },
-  "/ap-roles/{id}": {
+  "/feedbacks/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApRoleResponse"
+                "$ref": "#/components/schemas/FeedbackResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Ap-role"
+        "Feedback"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/ap-roles/{id}"
+      "operationId": "get/feedbacks/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ApRoleResponse"
+                "$ref": "#/components/schemas/FeedbackResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Ap-role"
+        "Feedback"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/ap-roles/{id}",
+      "operationId": "put/feedbacks/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ApRoleRequest"
+              "$ref": "#/components/schemas/FeedbackRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Ap-role"
+        "Feedback"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/ap-roles/{id}"
+      "operationId": "delete/feedbacks/{id}"
     }
   }
 }

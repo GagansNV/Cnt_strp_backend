@@ -13,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "FoodName": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "Price": {
       "type": "integer"
@@ -26,6 +28,16 @@
     },
     "ImgUrl": {
       "type": "string"
+    },
+    "imageU": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

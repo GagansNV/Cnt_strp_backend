@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ap-role router
+ * feedback router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::ap-role.ap-role');
+module.exports = createCoreRouter('api::feedback.feedback');

@@ -78,11 +78,11 @@
       "required": true,
       "mappedBy": "users_permissions_user"
     },
-    "ap_roles": {
+    "feedbacks": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::ap-role.ap-role",
-      "mappedBy": "user"
+      "target": "api::feedback.feedback",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
